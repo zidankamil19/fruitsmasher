@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game 2D Web - Fruit Smasher</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Game Fruit Smasher</h2>
+  <p style="font-size: 0.9em; margin-top: -10px; color: #aaa;">Klik/Tap buah sebelum jatuh!</p>
+
+  <div id="loginMenu">
+    <input type="text" id="username" placeholder="Masukkan Username" required><br>
+    <input type="tel" id="whatsapp" placeholder="Nomor WA (contoh: 08123456789)" required><br>
+    <button onclick="startGame()">Mulai Bermain</button>
+  </div>
+
+  <div id="gameArea">
+    <canvas id="gameCanvas" width="320" height="400" style="cursor: pointer;"></canvas>
+  </div>
+
+  <div id="leaderboardArea">
+    <h3>Top 5 Leaderboard</h3>
+    <table id="leaderboardTable">
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Username</th>
+          <th>Skor</th>
+        </tr>
+      </thead>
+      <tbody id="leaderboardBody">
+        <tr>
+          <td colspan="3">Memuat data...</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
